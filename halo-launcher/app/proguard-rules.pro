@@ -1,0 +1,5 @@
+-keepattributes *Annotation*, InnerClasses
+-keep,includedescriptorclasses class com.halo.launcher.**$$serializer { *; }
+-keepclassmembers class com.halo.launcher.** { *** Companion; }
+-keepclasseswithmembers class com.halo.launcher.** { kotlinx.serialization.KSerializer serializer(...); }
+-keep class com.halo.launcher.service.** { *; }
